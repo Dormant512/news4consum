@@ -25,11 +25,11 @@ def VARModel(x,fwd):
 
 def VARExplore(dat, fwd,split, prds=[], predictors=None):
     b=len(dat)-split
-    d, mi,ma=Norm01(dat.data.values)
+    d, mi,ma=Norm01(dat)
     x=GetDataVec(d,prds, predictors)
     x1=x[:b]
     x_test=Nback(VARModel(x1,fwd), mi,ma)
-    m,d1np,d2np,d3np,d4 = Metr(x_test, dat.data.values[b:b+fwd])
+    m,d1np,d2np,d3np,d4 = Metr(x_test, dat[b:b+fwd])
     return  m,d1np,d2np,d3np,d4, x_test
 
 def VARUse(dat, fwd, prds=[], predictors=None):
