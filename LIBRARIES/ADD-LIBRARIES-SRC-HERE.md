@@ -20,4 +20,4 @@ For choosing predictors: <I>Tests.ChoosePredsGran</I>I> - by Granger test, <I>Te
 <LI><I>CorrEntr.cpp</I>, <I>CorrEntr.h</I>, <I>CorrEntr.so</I> - Correlation entropy
 <LI><I>fakeseries.py</I> and <I>generator.py</I> - artificial time series generator
 <LI><I>graph.py</I> - time series to transition grapg transformation
-<LI><I>HurstExp.cpp</I>, <I>HurstExp.h</I>, <I>HurstExp.so</I>- Hurst exponent calculation
+<LI><I>HurstExp.cpp</I>, <I>HurstExp.h</I>, <I>HurstExp.so</I>- Hurst exponent calculation.
